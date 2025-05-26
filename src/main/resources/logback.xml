@@ -1,0 +1,43 @@
+<configuration>
+
+  <!-- Appender para la Consola -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <!-- Formato del log: Fecha Hora [Thread] Nivel LoggerName(Linea) - Mensaje SaltoDeLinea -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}\(%L\) - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Appender para Archivo (Opcional - Descomentar para usar) -->
+  <!--
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>logs/bet4grad.log</file> --> <!-- Asegúrate que la carpeta 'logs' exista o tenga permisos para crearse -->
+    <!-- <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> -->
+      <!-- Rota el archivo de log diariamente -->
+      <!-- <fileNamePattern>logs/bet4grad.%d{yyyy-MM-dd}.log</fileNamePattern> -->
+      <!-- Guarda los logs de los últimos 30 días -->
+      <!-- <maxHistory>30</maxHistory> -->
+      <!-- Opcional: Comprimir logs antiguos -->
+      <!-- <fileNamePattern>logs/bet4grad.%d{yyyy-MM-dd}.log.gz</fileNamePattern> -->
+    <!-- </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}\(%L\) - %msg%n</pattern>
+    </encoder>
+  </appender>
+  -->
+
+  <!-- Nivel de Log por defecto (INFO, DEBUG, TRACE, WARN, ERROR) -->
+  <!-- Cambia a DEBUG o TRACE para ver más detalles durante el desarrollo -->
+  <root level="DEBUG"> <!-- Poner DEBUG para desarrollo, INFO para producción -->
+    <appender-ref ref="STDOUT" />
+    <!-- <appender-ref ref="FILE" /> --> <!-- Descomenta para guardar en archivo -->
+  </root>
+
+  <!-- Puedes definir niveles específicos por paquete para reducir ruido -->
+  <!-- Ejemplo: Menos logs del driver JDBC o de librerías externas -->
+  <!-- <logger name="com.microsoft.sqlserver.jdbc" level="WARN"/> -->
+  <!-- <logger name="org.apache.http" level="INFO"/> -->
+  <logger name="com.zaxxer.hikari" level="INFO"/> <!-- Si usaras HikariCP para pooling -->
+
+
+</configuration>
