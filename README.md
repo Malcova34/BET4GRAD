@@ -265,16 +265,20 @@ Contacto: danielflozanos25@gmail.com
 
 
 ### Dashboard Principal
-![Home]
+![image](https://github.com/user-attachments/assets/b6b8b078-a30d-4380-a9a4-e5eee9f94988)
+
 
 ### Sistema de Actividades
-![Actividades]
+![image](https://github.com/user-attachments/assets/07212457-0b6f-4070-b834-0387c540ee5a)
+
 
 ### Ruleta Casino
-![Ruleta]
+![image](https://github.com/user-attachments/assets/02aaceca-d3c1-4c40-9c2d-fae58c67fc4c)
+
 
 ### Panel Administrativo
-![Admin]
+![image](https://github.com/user-attachments/assets/12542c60-25e0-4d9c-9812-e36fe37202e9)
+
 
 ---
 
