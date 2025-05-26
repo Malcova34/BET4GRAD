@@ -249,7 +249,7 @@ Contacto: danielflozanos25@gmail.com
 **Daniel Lozano**
 - GitHub: [Malcova34](https://github.com/Malcova34)
 - Email: daniefllozanos25@gmail.com
-- LinkedIn: [Tu Perfil](https://www.linkedin.com/in/daniel-fernando-lozano-silva-6889a52b3/)
+- LinkedIn: [Click](https://www.linkedin.com/in/daniel-fernando-lozano-silva-6889a52b3/)
 
 ## 🙏 Agradecimientos
 
@@ -261,7 +261,8 @@ Contacto: danielflozanos25@gmail.com
 ## 📸 Screenshots
 
 ### Pantalla de Login
-![Login]
+![image](https://github.com/user-attachments/assets/4007be95-7cc4-40cd-ac3c-3cfb33b6dd70)
+
 
 ### Dashboard Principal
 ![Home]
